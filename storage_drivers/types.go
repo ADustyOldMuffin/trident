@@ -693,6 +693,10 @@ func (d GCPNFSStorageDriverConfig) SpecOnlyValidation() error {
 	return nil
 }
 
+type CephRBDStorageConfig struct {
+	*CommonStorageDriverConfig
+}
+
 type FakeStorageDriverConfig struct {
 	*CommonStorageDriverConfig
 	Protocol trident.Protocol `json:"protocol"`
